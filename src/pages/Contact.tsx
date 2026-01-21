@@ -29,8 +29,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Office",
-    value: "San Francisco, CA",
-    description: "123 Innovation Drive",
+    value: "Gujarat, India",
+    description: "Gujarat",
   },
 ];
 
