@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "hello@krishnainfinity.com",
+    value: "krishnainfinity27@gmail.com",
     description: "We'll respond within 24 hours",
   },
   {
@@ -241,7 +241,7 @@ const Contact = () => {
               {[
                 {
                   q: "How can I report a bug in one of your games?",
-                  a: "You can report bugs through our in-game support feature or by emailing support@krishnainfinity.com with details about the issue."
+                  a: "You can report bugs through our in-game support feature or by emailing krishnainfinity27@gmail.com with details about the issue."
                 },
                 {
                   q: "Do you offer partnership opportunities?",

@@ -19,9 +19,12 @@ const quickNav = [
     { id: "security", label: "Security" },
     { id: "your-choices-rights", label: "Your Choices & Rights" },
     { id: "children-privacy", label: "Children’s Privacy" },
-    { id: "international-transfers", label: "International Transfers" },
-    { id: "changes", label: "Changes to this Policy" },
-    { id: "contact", label: "Contact Us" },
+    { id: "international-data-transfers", label: "International Data Transfers" },
+    { id: "safe-use-of-dares", label: "Safe Use of Dares" },
+    { id: "tournaments-gifts-rewards", label: "Tournaments, Gifts & Rewards" },
+    { id: "voice-chat-audio-data", label: "Voice Chat & Audio Data" },
+    { id: "changes-to-policy", label: "Changes to This Policy" },
+    { id: "contact-us", label: "Contact Us" },
 ];
 
 const Privacy = () => {
@@ -45,7 +48,7 @@ const Privacy = () => {
 
                                 <div className="flex items-center gap-2">
                                     <Badge variant="secondary" className="px-3 py-1">
-                                        Reverse Ludo
+                                        Ludo Reverse
                                     </Badge>
                                     <Badge variant="outline" className="px-3 py-1">
                                         Privacy Policy
@@ -59,14 +62,14 @@ const Privacy = () => {
                                         <Shield className="h-6 w-6 text-primary" />
                                     </div>
                                     <div className="min-w-0">
-                                        <h1 className="text-3xl md:text-4xl font-bold text-foreground">Privacy Policy</h1>
+                                        <h1 className="text-3xl md:text-4xl font-bold text-foreground">Privacy Policy – Ludo Reverse</h1>
                                         <p className="text-muted-foreground mt-2">
-                                            This Privacy Policy describes how reverseludo collects, uses, and shares information when you use our mobile game.
+                                            This Privacy Policy describes how Ludo Reverse collects, uses, and shares information when you use our mobile game.
                                         </p>
                                         <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
                                             <div className="rounded-2xl bg-card/60 border border-border/50 p-4">
                                                 <div className="text-xs text-muted-foreground">App</div>
-                                                <div className="font-semibold text-foreground mt-1">reverseludo</div>
+                                                <div className="font-semibold text-foreground mt-1">Ludo Reverse</div>
                                             </div>
                                             <div className="rounded-2xl bg-card/60 border border-border/50 p-4">
                                                 <div className="text-xs text-muted-foreground">Platform</div>
@@ -74,7 +77,7 @@ const Privacy = () => {
                                             </div>
                                             <div className="rounded-2xl bg-card/60 border border-border/50 p-4">
                                                 <div className="text-xs text-muted-foreground">Last updated</div>
-                                                <div className="font-semibold text-foreground mt-1">2026-01-17</div>
+                                                <div className="font-semibold text-foreground mt-1">22-01-2026</div>
                                             </div>
                                         </div>
                                         <p className="text-sm text-muted-foreground mt-6">
@@ -98,7 +101,7 @@ const Privacy = () => {
                                         <div className="flex items-center justify-between gap-4">
                                             <h2 className="text-lg font-semibold text-foreground">Quick Navigation</h2>
                                             <a
-                                                href="#contact"
+                                                href="#contact-us"
                                                 className="text-sm text-primary hover:text-primary/80 transition-colors inline-flex items-center"
                                             >
                                                 <Mail className="mr-2 h-4 w-4" />
@@ -119,7 +122,7 @@ const Privacy = () => {
                                         </nav>
                                         <Separator className="my-4" />
                                         <div className="text-xs text-muted-foreground">
-                                            Developer/Company: krishnainfinity
+                                            App Name: Ludo Reverse
                                         </div>
                                     </CardContent>
                                 </Card>
@@ -133,33 +136,49 @@ const Privacy = () => {
                                         <section id="information-we-collect" className="scroll-mt-24">
                                             <h2 className="text-2xl font-bold text-foreground">1. Information We Collect</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                We collect information to provide and improve gameplay features (online matchmaking, friends, leaderboards), troubleshoot issues, and show ads (if enabled in your build).
+                                                We collect information to provide and improve gameplay features (such as online matchmaking, friends, and leaderboards), troubleshoot issues, and show ads (if enabled in your build).
                                             </p>
-                                            <div className="mt-5 space-y-4 text-muted-foreground">
+                                            <div className="mt-5 space-y-5 text-muted-foreground">
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Account information (if you sign in):</div>
-                                                    <div>Email address, display name/username, and authentication identifiers.</div>
+                                                    <div className="font-semibold text-foreground">Account Information (if you sign in)</div>
+                                                    <ul className="mt-2 space-y-1 list-disc pl-6">
+                                                        <li>Email address</li>
+                                                        <li>Display name / username</li>
+                                                        <li>Authentication identifiers</li>
+                                                    </ul>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Gameplay data:</div>
-                                                    <div>Game state and events needed to run matches (e.g., room ID, player moves, dice results, winners, timestamps).</div>
+                                                    <div className="font-semibold text-foreground">Gameplay Data</div>
+                                                    <ul className="mt-2 space-y-1 list-disc pl-6">
+                                                        <li>Game state and events required to run matches</li>
+                                                        <li>Room IDs, player moves, dice results, winners, and timestamps</li>
+                                                    </ul>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Device &amp; app information:</div>
-                                                    <div>Device model, operating system version, app version, language, and approximate region (derived from device settings).</div>
+                                                    <div className="font-semibold text-foreground">Device &amp; App Information</div>
+                                                    <ul className="mt-2 space-y-1 list-disc pl-6">
+                                                        <li>Device model</li>
+                                                        <li>Operating system version</li>
+                                                        <li>App version</li>
+                                                        <li>Language</li>
+                                                        <li>Approximate region (derived from device settings)</li>
+                                                    </ul>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Diagnostics:</div>
-                                                    <div>Crash logs and performance data to help us fix bugs.</div>
+                                                    <div className="font-semibold text-foreground">Diagnostics</div>
+                                                    <div className="mt-2">Crash logs and performance data to help identify and fix issues</div>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Advertising identifiers (if ads are shown):</div>
-                                                    <div>Device advertising ID (such as Google Advertising ID) and related ad interaction data.</div>
+                                                    <div className="font-semibold text-foreground">Advertising Identifiers (if ads are shown)</div>
+                                                    <ul className="mt-2 space-y-1 list-disc pl-6">
+                                                        <li>Device advertising ID (such as Google Advertising ID)</li>
+                                                        <li>Ad interaction and measurement data</li>
+                                                    </ul>
                                                 </div>
                                                 <div className="rounded-2xl border border-border/50 bg-card/60 p-4">
                                                     <div className="font-semibold text-foreground">Note:</div>
                                                     <div>
-                                                        We do not intentionally collect sensitive personal information. Please do not share sensitive information in chat or usernames.
+                                                        We do not intentionally collect sensitive personal information. Please do not share sensitive information in chat, usernames, or during gameplay.
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,36 +186,37 @@ const Privacy = () => {
 
                                         <section id="how-we-use-information" className="scroll-mt-24">
                                             <h2 className="text-2xl font-bold text-foreground">2. How We Use Information</h2>
+                                            <p className="text-muted-foreground mt-3">We use collected information to:</p>
                                             <ul className="mt-4 space-y-2 text-muted-foreground list-disc pl-6">
-                                                <li>Provide gameplay features such as online matches, friends, and leaderboards.</li>
-                                                <li>Maintain and improve the App, including debugging and performance tuning.</li>
-                                                <li>Prevent fraud and abuse (e.g., cheating, spam, or misuse).</li>
-                                                <li>Show ads and measure ad performance (if your version includes ads).</li>
+                                                <li>Provide gameplay features such as online matches, friends, and leaderboards</li>
+                                                <li>Maintain, improve, and debug the App</li>
+                                                <li>Prevent fraud, cheating, spam, and misuse</li>
+                                                <li>Display ads and measure ad performance (if enabled)</li>
                                             </ul>
                                         </section>
 
                                         <section id="sharing-third-parties" className="scroll-mt-24">
                                             <h2 className="text-2xl font-bold text-foreground">3. Sharing &amp; Third Parties</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                We may share information with service providers who help operate the App. These providers process information on our behalf and only as needed to provide their services.
+                                                We may share information with trusted service providers who help operate the App. These providers process data only on our behalf and only as necessary.
                                             </p>
                                             <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
                                                 <div className="rounded-2xl border border-border/50 bg-card/60 p-5">
                                                     <div className="font-semibold text-foreground">Backend &amp; database services:</div>
                                                     <div className="text-muted-foreground mt-2">
-                                                        We may use a backend provider to store user accounts, game rooms, and match results.
+                                                        Store user accounts, game rooms, and match results
                                                     </div>
                                                 </div>
                                                 <div className="rounded-2xl border border-border/50 bg-card/60 p-5">
                                                     <div className="font-semibold text-foreground">Crash reporting and diagnostics:</div>
                                                     <div className="text-muted-foreground mt-2">
-                                                        Providers may receive crash logs and basic device/app metadata.
+                                                        Receive crash logs and basic device/app metadata
                                                     </div>
                                                 </div>
                                                 <div className="rounded-2xl border border-border/50 bg-card/60 p-5">
                                                     <div className="font-semibold text-foreground">Advertising networks:</div>
                                                     <div className="text-muted-foreground mt-2">
-                                                        If enabled, ad partners may collect device identifiers and ad interaction data.
+                                                        If enabled, advertising partners may collect device identifiers and ad interaction data
                                                     </div>
                                                 </div>
                                             </div>
@@ -207,32 +227,32 @@ const Privacy = () => {
                                             <p className="text-muted-foreground mt-3">
                                                 The App may display ads using third-party advertising SDKs (for example, Google AdMob). These partners may use cookies or mobile identifiers to provide, personalize (where permitted), and measure ads.
                                             </p>
-                                            <p className="text-muted-foreground mt-3">You can reset or limit ad personalization from your device settings.</p>
+                                            <p className="text-muted-foreground mt-3">You can reset or limit ad personalization through your device settings.</p>
                                         </section>
 
                                         <section id="analytics" className="scroll-mt-24">
                                             <h2 className="text-2xl font-bold text-foreground">5. Analytics</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                We may use analytics to understand how players use the App (e.g., session duration, feature usage, errors). Analytics data is used to improve stability and gameplay.
+                                                We may use analytics tools to understand how players use the App (such as session duration, feature usage, and error events). This data helps us improve gameplay experience, performance, and stability.
                                             </p>
                                         </section>
 
                                         <section id="data-retention" className="scroll-mt-24">
                                             <h2 className="text-2xl font-bold text-foreground">6. Data Retention</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                We retain data only as long as necessary for the purposes described above, including:
+                                                We retain data only for as long as necessary for the purposes described in this policy:
                                             </p>
                                             <ul className="mt-4 space-y-2 text-muted-foreground list-disc pl-6">
-                                                <li>Account data while your account is active.</li>
-                                                <li>Gameplay records as needed for leaderboards, dispute resolution, and anti-cheat.</li>
-                                                <li>Diagnostics data for a limited period to troubleshoot issues.</li>
+                                                <li>Account data while your account remains active</li>
+                                                <li>Gameplay records for leaderboards, dispute resolution, and anti-cheat</li>
+                                                <li>Diagnostics data for a limited period to resolve technical issues</li>
                                             </ul>
                                         </section>
 
                                         <section id="security" className="scroll-mt-24">
                                             <h2 className="text-2xl font-bold text-foreground">7. Security</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                We take reasonable measures to protect your information. However, no method of transmission or storage is 100% secure.
+                                                We take reasonable technical and organizational measures to protect your information. However, no method of transmission over the internet or electronic storage is completely secure.
                                             </p>
                                         </section>
 
@@ -240,18 +260,18 @@ const Privacy = () => {
                                             <h2 className="text-2xl font-bold text-foreground">8. Your Choices &amp; Rights</h2>
                                             <div className="mt-5 space-y-4 text-muted-foreground">
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Access/Update:</div>
+                                                    <div className="font-semibold text-foreground">Access and Update</div>
                                                     <div>You may update certain profile information within the App where available.</div>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Delete account:</div>
+                                                    <div className="font-semibold text-foreground">Delete Account</div>
                                                     <div>
-                                                        If your version of the App supports it, you can request account deletion. Otherwise, contact us and we will assist.
+                                                        If your version of the App supports account deletion, you may request it directly in the App. Otherwise, contact us and we will assist you.
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className="font-semibold text-foreground">Opt out of personalized ads:</div>
-                                                    <div>Via device-level ad settings.</div>
+                                                    <div className="font-semibold text-foreground">Opt-Out of Personalized Ads</div>
+                                                    <div>You may limit or reset ad personalization through your device settings.</div>
                                                 </div>
                                             </div>
                                         </section>
@@ -259,39 +279,89 @@ const Privacy = () => {
                                         <section id="children-privacy" className="scroll-mt-24">
                                             <h2 className="text-2xl font-bold text-foreground">9. Children’s Privacy</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                The App is not directed to children under the age of 13 (or the minimum age required in your country). We do not knowingly collect personal information from children.
+                                                The App is not directed to children under the age of 13 (or the minimum legal age required in your country). We do not knowingly collect personal information from children.
                                             </p>
                                             <p className="text-muted-foreground mt-3">
-                                                If you believe a child has provided personal information, contact us so we can delete it.
+                                                If you believe a child has provided personal information, please contact us so we can delete it promptly.
                                             </p>
                                         </section>
 
-                                        <section id="international-transfers" className="scroll-mt-24">
-                                            <h2 className="text-2xl font-bold text-foreground">10. International Transfers</h2>
+                                        <section id="international-data-transfers" className="scroll-mt-24">
+                                            <h2 className="text-2xl font-bold text-foreground">10. International Data Transfers</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                Your information may be processed in countries other than your own depending on where our service providers operate. We take steps to ensure appropriate safeguards where required.
+                                                Your information may be processed in countries other than your own, depending on where our service providers operate. We take reasonable steps to ensure appropriate safeguards are in place where required by law.
                                             </p>
                                         </section>
 
-                                        <section id="changes" className="scroll-mt-24">
-                                            <h2 className="text-2xl font-bold text-foreground">11. Changes to this Policy</h2>
+                                        <section id="safe-use-of-dares" className="scroll-mt-24">
+                                            <h2 className="text-2xl font-bold text-foreground">11. Safe Use of Dares (Important)</h2>
                                             <p className="text-muted-foreground mt-3">
-                                                We may update this Privacy Policy from time to time. We will update the “Last updated” date above. Continued use of the App after changes means you accept the updated policy.
+                                                Ludo Reverse includes optional dares designed for fun and social interaction.
+                                            </p>
+                                            <ul className="mt-4 space-y-2 text-muted-foreground list-disc pl-6">
+                                                <li>Participation in dares is voluntary</li>
+                                                <li>Users should attempt dares only if they feel comfortable and safe</li>
+                                                <li>Dares must be performed in a harmless, respectful, and lawful manner</li>
+                                                <li>Do not force, pressure, or disturb other people</li>
+                                                <li>Some dares may involve public interaction, recording, or tagging on social media—always obtain consent first</li>
+                                                <li>Users are encouraged to skip or change any dare they do not wish to perform</li>
+                                                <li>
+                                                    Ludo Reverse is not responsible for actions taken by users outside the App. Users are solely responsible for their behavior while performing dares.
+                                                </li>
+                                            </ul>
+                                        </section>
+
+                                        <section id="tournaments-gifts-rewards" className="scroll-mt-24">
+                                            <h2 className="text-2xl font-bold text-foreground">12. Tournaments, Gifts &amp; Rewards</h2>
+                                            <p className="text-muted-foreground mt-3">
+                                                Ludo Reverse may conduct tournaments that offer free gifts or rewards to winners.
+                                            </p>
+                                            <ul className="mt-4 space-y-2 text-muted-foreground list-disc pl-6">
+                                                <li>Gifts are limited to the announced number of winners only</li>
+                                                <li>(for example: if a tournament declares 3 winners, only those 3 winners are eligible)</li>
+                                                <li>Rewards are non-transferable and cannot be claimed by non-winning users</li>
+                                                <li>Each winner is eligible for one reward per tournament, unless stated otherwise</li>
+                                                <li>We may verify winners through in-app data, match records, and account validation</li>
+                                                <li>Fake claims, duplicate accounts, misuse, or fraudulent activity will result in disqualification</li>
+                                                <li>Ludo Reverse reserves the right to withhold or cancel rewards if suspicious or abusive behavior is detected.</li>
+                                            </ul>
+                                        </section>
+
+                                        <section id="voice-chat-audio-data" className="scroll-mt-24">
+                                            <h2 className="text-2xl font-bold text-foreground">13. Voice Chat &amp; Audio Data</h2>
+                                            <p className="text-muted-foreground mt-3">
+                                                We collect and process audio input only when you use the in-game voice chat feature.
+                                            </p>
+                                            <ul className="mt-4 space-y-2 text-muted-foreground list-disc pl-6">
+                                                <li>Audio is captured only inside private rooms where players voluntarily enable voice chat</li>
+                                                <li>Voice communication is not recorded, stored, or saved by us</li>
+                                                <li>Audio is transmitted in real time only to other players in the same private room</li>
+                                                <li>Voice chat is not available in public matchmaking or public rooms</li>
+                                                <li>If you do not use voice chat, no audio is accessed.</li>
+                                            </ul>
+                                        </section>
+
+                                        <section id="changes-to-policy" className="scroll-mt-24">
+                                            <h2 className="text-2xl font-bold text-foreground">14. Changes to This Policy</h2>
+                                            <p className="text-muted-foreground mt-3">
+                                                We may update this Privacy Policy from time to time. When we do, we will update the “Last updated” date above. Continued use of the App after changes means you accept the updated policy.
                                             </p>
                                         </section>
 
-                                        <section id="contact" className="scroll-mt-24">
-                                            <h2 className="text-2xl font-bold text-foreground">12. Contact Us</h2>
-                                            <p className="text-muted-foreground mt-3">If you have questions or requests about this Privacy Policy, contact:</p>
+                                        <section id="contact-us" className="scroll-mt-24">
+                                            <h2 className="text-2xl font-bold text-foreground">15. Contact Us</h2>
+                                            <p className="text-muted-foreground mt-3">
+                                                If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at:
+                                            </p>
                                             <div className="mt-5 rounded-2xl border border-border/50 bg-card/60 p-6">
                                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                                                     <div>
                                                         <div className="text-sm text-muted-foreground">Email</div>
-                                                        <div className="text-lg font-semibold text-foreground">support@krishnainfinity.com</div>
-                                                        <div className="text-sm text-muted-foreground mt-1">Developer/Company: krishnainfinity</div>
+                                                        <div className="text-lg font-semibold text-foreground">krishnainfinity27@gmail.com</div>
+                                                        <div className="text-sm text-muted-foreground mt-1">App Name: Ludo Reverse</div>
                                                     </div>
                                                     <Button asChild>
-                                                        <a href="mailto:support@krishnainfinity.com" className="inline-flex items-center">
+                                                        <a href="mailto:krishnainfinity27@gmail.com" className="inline-flex items-center">
                                                             <Mail className="mr-2 h-4 w-4" />
                                                             Email Support
                                                         </a>
