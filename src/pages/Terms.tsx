@@ -272,7 +272,7 @@ const Terms = () => {
                     <section id="user-content" className="scroll-mt-24">
                       <h2 className="text-2xl font-bold text-foreground">14. User Content &amp; Community Safety</h2>
                       <p className="text-muted-foreground mt-3">
-                        Ludo Reverse allows users to create and share content such as usernames, profile images, profile status, and chat messages.
+                        Ludo Reverse allows users to create and share content such as usernames, and chat messages.
                       </p>
                       <p className="text-muted-foreground mt-3">To maintain a safe environment, the following rules apply:</p>
                       <ul className="mt-4 space-y-2 text-muted-foreground list-disc pl-6">
