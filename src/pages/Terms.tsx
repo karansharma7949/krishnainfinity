@@ -22,6 +22,7 @@ const quickNav = [
   { id: "liability", label: "Limitation of Liability" },
   { id: "changes", label: "Changes to These Terms" },
   { id: "law", label: "Governing Law" },
+  { id: "user-content", label: "User Content & Community Safety" },
   { id: "contact-us", label: "Contact Us" },
 ];
 
@@ -265,6 +266,35 @@ const Terms = () => {
                       <h2 className="text-2xl font-bold text-foreground">12. Governing Law</h2>
                       <p className="text-muted-foreground mt-3">
                         These Terms shall be governed by and interpreted in accordance with the laws applicable in your jurisdiction, without regard to conflict of law principles.
+                      </p>
+                    </section>
+
+                    <section id="user-content" className="scroll-mt-24">
+                      <h2 className="text-2xl font-bold text-foreground">14. User Content &amp; Community Safety</h2>
+                      <p className="text-muted-foreground mt-3">
+                        Ludo Reverse allows users to create and share content such as usernames, profile images, profile status, and chat messages.
+                      </p>
+                      <p className="text-muted-foreground mt-3">To maintain a safe environment, the following rules apply:</p>
+                      <ul className="mt-4 space-y-2 text-muted-foreground list-disc pl-6">
+                        <li>Users must not post, upload, or share content that is abusive, offensive, hateful, sexually explicit, illegal, or harmful to others.</li>
+                        <li>Harassment, bullying, threats, and impersonation are strictly prohibited.</li>
+                        <li>Users are responsible for the content they create or share within the App.</li>
+                      </ul>
+
+                      <p className="text-muted-foreground mt-5 font-semibold text-foreground">Reporting &amp; Blocking:</p>
+                      <ul className="mt-2 space-y-2 text-muted-foreground list-disc pl-6">
+                        <li>Users can report inappropriate content or abusive users directly within the App.</li>
+                        <li>Users can block other users to prevent further interaction.</li>
+                      </ul>
+
+                      <p className="text-muted-foreground mt-5 font-semibold text-foreground">Moderation:</p>
+                      <ul className="mt-2 space-y-2 text-muted-foreground list-disc pl-6">
+                        <li>Reported content may be reviewed by the developer and may be removed if it violates these Terms.</li>
+                        <li>Accounts involved in abusive or harmful behavior may be suspended or permanently banned.</li>
+                      </ul>
+
+                      <p className="text-muted-foreground mt-4">
+                        We aim to review and act on reports of objectionable content within <span className="font-semibold text-foreground">24 hours</span>.
                       </p>
                     </section>
 
